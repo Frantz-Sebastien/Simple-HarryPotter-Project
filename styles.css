@@ -1,15 +1,163 @@
 li {
     list-style: none;
-  }
+}
+a:hover {
+        background-color:bisque;
+        font-size: 200%;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+  } 
 
 
-  body {
+body {
+    background-color: #e9e9e9;
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    font-weight: normal;
+  }
+  
+  a {
+    display: block;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    font-weight: bold; 
+    text-decoration: none;
+    color: rgb(36, 104, 199);
+  }
+  
+  .search-box {
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  li.characterInfo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #c9cbcb;
+    color: black solid;
+  }
+  
+  .characters {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding:unset;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .searchCharacters {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #character-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
   }
 
-  /* .gryffindor {
-    background-image: url(https://static.wikia.nocookie.net/harrypotter/images/b/b1/Gryffindor_ClearBG.png/revision/latest?cb=20190222162949);
-  } */
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  
+  
+  #gryffindor li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(174,0,1);
+    border-radius: 5px;
+    color: rgb(238,186,48);
+    font-weight: bolder;
+    font-size: larger;
+  }
+  
+  #ravenclaw li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(81,88,184);
+    border-radius: 5px;
+    color: silver;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  
+  #slytherin li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(38,103,72);
+    border-radius: 5px;
+    color:silver;
+    font-weight:bold;
+    font-size: larger;
+  }
+  
+  #hufflepuff li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(238,197,93);
+    border-radius: 5px;
+    color:rgb(85, 50, 25);
+    font-weight: bolder;
+    font-size: larger;
+  }
+  
+  p{
+    text-align: center;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  select {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #dropdown {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+
+  img{
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
