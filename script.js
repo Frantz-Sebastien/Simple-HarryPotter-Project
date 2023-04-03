@@ -3,6 +3,7 @@ const searchCharacters = document.getElementById("searchCharacters")
 const characterList = document.getElementById("character-list")
 const characterInfo = document.querySelector("div")
 const daBody = document.querySelector("body")
+const imgParagraph = document.getElementById("add-image-below")
 
 
 searchCharacters.addEventListener("click", (event) => {
@@ -70,7 +71,7 @@ const findHPcharacter = (json, characterName) => {
             
             imgElement.setAttribute(`src`, wizardPic)
             imgElement.setAttribute(`alt`, daName)
-            daBody.append(imgElement)
+            imgParagraph.append(imgElement)
             
             const belowUl = document.querySelector("ul") //I will use this for the Houses
             
