@@ -2,11 +2,14 @@ const characterInput = document.getElementById("characters")
 const searchCharacters = document.getElementById("searchCharacters")
 const characterList = document.getElementById("character-list")
 const characterInfo = document.querySelector("div")
-const daBody = document.getElementById("theBody")
+const daBody = document.querySelector("body")
 const belowUl = document.querySelector("ul")
 
 
 searchCharacters.addEventListener("click", (event) => {
+
+    event.preventDefault();
+
     let characterName = characterInput.value
     characterInput.value = ""
     
@@ -25,6 +28,7 @@ const findHPcharacter = (json, characterName) => {
     characterList.innerHTML = ""
 
     let removePic = document.getElementById("daPictah")
+    lowerCaseCharacterName = characterName.toLowerCase() //to make sure the search is not case-sensitive, I'm using toLowerCase() function
 
     if (removePic) {
     removePic.remove()
@@ -32,7 +36,6 @@ const findHPcharacter = (json, characterName) => {
 
     
     for (nom of json){
-        lowerCaseCharacterName = characterName.toLowerCase() //to make sure the search is not case-sensitive, I'm using toLowerCase() function
 
         if(nom.name.toLowerCase().includes(lowerCaseCharacterName)){
             let daName = nom.name
@@ -83,6 +86,12 @@ const findHPcharacter = (json, characterName) => {
             belowUl.append(resultHouse)
             belowUl.append(resultActor)
             belowUl.append(resultWizard) //PART 2
+
+
+            if(daHouse === "Gryffindor"){
+                daBody.classList.add('gryffindor')
+
+            }
                         
         }
     }

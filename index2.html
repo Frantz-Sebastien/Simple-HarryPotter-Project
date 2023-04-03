@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All The Spells</title>
+    <script defer src = "script2.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-    <body id = "theBody">
+    <body>
         <h1>The Portfolio</h1>
         <h2>The Harry Potter Project (2nd Page)</h2>
         <h3>Abracadabra!</h3>
         <p>Magic Spells</p>
     
         <a href="index.html">Characters</a>
-    
-        <div class = "search-box">
-            <li class = "characterInfo"><strong>Search for a Spell</strong></li>
-            <input type="text" class= "characters" id = "characters">
-            <button class = "searchCharacters" id = "searchCharacters">Search</button>
-    
-                    <ul id = "character-list">
-                    </ul>
-        </div>
+
+    <p>     </p>
+
+          <label for="dropdown"><strong>Select a spell:</strong></label>
+
+          <select id="dropdown">
+                <option value="">-- Please select a spell --</option>
+          </select>
+          
+          <p id="description"></p>
+          
+
 </body>
 </html>
